@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+        <title>Book Store</title>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <div class="display-4 text-center">
+                My Book Store
+            </div>
+            <form class="mt-4" id="book-form">
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="title">Title</label>
+                    <input class="form-control" id="title" type="text">
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="author">Author</label>
+                    <input class="form-control" id="author" type="text">
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="isbn">ISBN#</label>
+                    <input class="form-control" id="isbn" type="text">
+                </div>
+                <input class="btn btn-primary btn-block" type="submit" value="Add Book">
+            </form>
+            <table class="table mt-4">
+                <thead>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Isbn</th>
+                    <th></th>
+                </thead>
+                <tbody id="book-list">
+                    <tr></tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
